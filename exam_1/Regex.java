@@ -75,7 +75,7 @@ public class Regex {
         String email = scan.nextLine();
 
         // Provide regex pattern
-        pattern = Pattern.compile("");
+        pattern = Pattern.compile("^(?=.*06)[\\w-\\.]{10,}@gmail\\.com");
 
         match = pattern.matcher(email);
 
@@ -126,7 +126,7 @@ public class Regex {
         String url = scan.nextLine();
 
         // Provide regex pattern
-        pattern = Pattern.compile("");
+        pattern = Pattern.compile("(https:\\S+|http:\\S+|www\\S))+(aldrexsuarez)+(.com|.com|.com.ph|.contact-us)$(?![0-9]/)");
 
         match = pattern.matcher(url);
 
