@@ -31,7 +31,7 @@ public class Regex {
         String password = scan.nextLine();
 
         // Provide the pattern
-        pattern = Pattern.compile("");
+        pattern = Pattern.compile("^[\\T_][^VGDjkm\\f]{3,}");
 
         match = pattern.matcher(password);
 
@@ -177,7 +177,7 @@ public class Regex {
         // 1. Remove the hashtag in the tweet
 
         // Provide the regex pattern
-        tweet = tweet.replaceAll("", "");
+        tweet = tweet.replaceAll("(#McDStories)", "");
 
         System.out.println(tweet);
 
@@ -191,7 +191,7 @@ public class Regex {
         // 1. Remove the URL in the tweet
 
         // Provide the regex pattern
-        tweet = tweet.replaceAll("", "");
+        tweet = tweet.replaceAll("(http:\\/\\/apne.ws\\/AayqsiC)", "");
 
         System.out.println(tweet);
 
