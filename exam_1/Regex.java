@@ -154,7 +154,7 @@ public class Regex {
 
         // Provide regex pattern
         pattern = Pattern
-                .compile("");
+                .compile("\\w+(\\.pptx|\\.xlsx|\\.docx|\\.txt)");
         match = pattern.matcher(myfiles);
 
         boolean found = false;
